@@ -18,6 +18,9 @@
             display: inline-block;
             background:#254665;
             vertical-align: top;
+            transform: translateX(50px);
+            opacity: 0;
+            transition: all .5s linear;
         }
         .list{
             text-align: left;
@@ -63,6 +66,9 @@
             display: inline-block;
             margin: 80px 0 0 20px;
             vertical-align: top;
+            transform: translateY(-20px);
+            opacity: 0;
+            transition: all .4s linear .3s;
         }
         .container{
             position:relative;
@@ -71,7 +77,7 @@
             margin: 6px 4px;
             width:100%;
             display: inline-block;
-            background: #3475b1;
+            background-image: linear-gradient(#5aa7ed,#1372c9);
             padding: 10px 14px;
             color:#fff;
             font-size: 16px;
@@ -161,7 +167,7 @@
 </head>
 <body>
      <div class="personal">
-        <div class="left-content">
+        <div class="left-content" id="left">
             <div class="list">
                 <div class="logo-container">
                     <img src="BZ1701141432079518.jpg" alt="头像" class="logo" width="117px" height="170px">
@@ -205,7 +211,7 @@
                 </ul>
             </div>
         </div>
-        <div class="right-content">
+        <div class="right-content" id="right">
             <div class="container">
                 <div class="title">>>教育背景</div>
                 <div class="item-wrapper clearfix">
@@ -283,16 +289,31 @@
             </div>
             <div class="container">
                 <div class="title">>>自我介绍</div>
+                <p class="passage">开发经验1年</p>
                 <p class="passage">熟悉HTML5 CSS3 JavaScript ES6 Vue axios vuex</p>
-                <p class="passage">开发经验1年无工作经验</p>
                 <div class="line"></div>
                 <p class="passage">一些自己在学习过程中记录的笔记：</p>
                 <p class="passage"><a href="http://note.youdao.com/noteshare?id=c77a980be7821f31d7dd9dc59eea4fb4">http://note.youdao.com/noteshare?id=c77a980be7821f31d7dd9dc59eea4fb4</a></p>
                 <p class="passage"><a href="http://note.youdao.com/noteshare?id=8868a59384ce2012a0f5ccf7fd3d2084">http://note.youdao.com/noteshare?id=8868a59384ce2012a0f5ccf7fd3d2084</a></p>
                 <div class="line"></div>
-                <p class="passage">半路转行通过自学学习前端，对前端充满了兴趣，勤奋学习，对自己不足的方面也会自己多去学习，利用自己的时间将差距缩小。</p>
+                <p class="passage">凭借热爱，才有继续的动力</p>
             </div>
         </div>
     </div>
 </body>
+<script>
+    window.onload = function(){
+        var left_content = document.getElementById('left');
+        var right_content = document.getElementById('right');
+
+        function show(){
+            left_content.style.transform = 'translateY(0)';
+            left_content.style.opacity = 1;
+
+            right_content.style.transform = 'translateY(0)';
+            right_content.style.opacity = 1;
+        }
+        show();
+    }
+</script>
 </html>
