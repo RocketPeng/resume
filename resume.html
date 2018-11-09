@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .personal{
+            width: 800px;
+            height: 900px;
+            display: flex;
+            margin:0 auto;
+        }
+        .left-content{
+            flex: 0 0 200px;
+            display: inline-block;
+            background:#254665;
+            vertical-align: top;
+        }
+        .list{
+            text-align: left;
+        }
+        .logo-container{
+            width: 117px;
+            height: 117px;
+            margin: 28px auto;
+            overflow: hidden;
+            border-radius: 50%;
+            position:relative;
+            border: 2px solid #fff;
+        }
+        .logo{
+            position: absolute;
+            top:-8px;
+            left: 0;
+            right:0;
+        }
+        .info{
+            background:#3475b1;
+            height: 40px;
+            color:#fff;
+            padding-left:10px;
+            line-height: 40px;
+            font-size:16px;
+            font-weight: 700;
+            text-align: left;
+            letter-spacing:4px;
+            transform: translateX(10px);
+        }
+        .list li{
+            padding-left:20px;
+            color: #fff;
+            font-family:"微软雅黑";
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 44px;
+            text-shadow: 3px 2px 5px rgba(0,0,0,.5);
+        }
+        .right-content{
+            flex: 1;
+            display: inline-block;
+            margin: 80px 0 0 20px;
+            vertical-align: top;
+        }
+        .container{
+            position:relative;
+        }
+        .title{
+            margin: 6px 4px;
+            width:100%;
+            display: inline-block;
+            background: #3475b1;
+            padding: 10px 14px;
+            color:#fff;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing:4px;
+            border-radius: 0 20px 0 20px;
+            text-shadow: 3px 2px 5px rgba(0,0,0,.5);
+        }
+        .item{
+            margin: 10px 0 20px 10px;
+            font-size:18px;
+            float: left;
+        }
+        .time{
+            font-family: "宋体";
+            margin: 10px;
+            font-size:13px;
+            font-weight: 700;
+            letter-spacing:1px;
+            float: right;
+        }
+        .item-info{
+            margin:0 0 10px 10px;
+            font-size:14px;
+        }
+        .tech-wrapper{
+            margin-left: 10px;
+            width:598px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .tech{
+            margin: 10px;
+        }
+        .tech p{
+            margin-bottom:5px;
+            text-align: center;
+            font-size:16px;
+        }
+        .bar-wrapper{
+            padding:3px 5px;
+            box-sizing: border-box;
+            flex:1;
+            width: 275px;
+            height: 30px;
+            border:1px solid #000;
+            border-radius: 20px;
+        }
+        .bar{
+            height: 21px;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        .bar-num{
+            height: 100%;
+            border-radius: 20px;
+            background-image: linear-gradient(#5092cf,#1372c9);
+        }
+        .bar-html{
+            width: 95%;
+        }
+        .bar-css{
+            width: 90%;
+        }
+        .bar-js{
+            width: 80%;
+        }
+        .bar-jq{
+            width: 80%;
+        }
+        .bar-vue{
+            width: 77%;
+        }
+        .bar-webpack{
+            width: 60%
+        }
+        .passage{
+            margin-left: 10px;
+            font-size: 16px;
+            line-height: 35px;
+        }
+        .line{
+            margin-left:10px;
+            border-bottom: 1px solid rgba(111, 111, 111, 0.3);
+        }
+    </style>
+</head>
+<body>
+     <div class="personal">
+        <div class="left-content">
+            <div class="list">
+                <div class="logo-container">
+                    <img src="BZ1701141432079518.jpg" alt="头像" class="logo" width="117px" height="170px">
+                </div>
+                <div class="info">基本信息</div>
+                <ul>
+                    <li>
+                        <span>姓名：</span>
+                        <span>彭锦荣</span>
+                    </li>
+                    <div class="line"></div>
+                    <li>
+                        <span>年龄：</span>
+                        <span>25</span>
+                    </li>
+                    <div class="line"></div>
+                    <li>
+                        <span>性别：</span>
+                        <span>男</span>
+                    </li>
+                    <div class="line"></div>
+                    <li>
+                        <span>籍贯：</span>
+                        <span>广东</span>
+                    </li>
+                    <div class="line"></div>
+                    <li>
+                        <span>学历：</span>
+                        <span>大专</span>
+                    </li>
+                    <div class="info">联系方法</div>
+                    <li>
+                        <div>电话</div>
+                        <div>13692155908</div>
+                    </li>
+                    <div class="line"></div>
+                    <li>
+                        <div>Email</div>
+                        <div>372447858@qq.com</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="container">
+                <div class="title">>>教育背景</div>
+                <div class="item-wrapper clearfix">
+                    <div class="item">广东交通职业技术学院</div>
+                    <div class="time">2012.9—2015.7</div>
+                </div>
+                <div class="item-info">
+                    <span>专业：</span>
+                    <span>城市轨道交通工程技术</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title">>>工作经历</div>
+                <div class="item-wrapper clearfix">
+                    <div class="item">深圳地铁集团有限公司&nbsp;&nbsp;车辆检修工</div>
+                    <div class="time">2015.7—至今</div>
+                </div>
+                <div class="item-info">
+                    <span>工作职责：</span>
+                    <span>负责地铁车辆部件维修与养护，对地铁车辆进行检查与测试</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title">>>掌握技能</div>
+                <div class="tech-wrapper">
+                    <div class="tech">
+                        <p>HTML</p>
+                        <div class="bar-wrapper">
+                            <div class="bar">
+                                <div class="bar-num bar-html" title="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <p>CSS</p>
+                        <div class="bar-wrapper">
+                            <div class="bar">
+                                <div class="bar-num bar-css" title="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <p>JavaScript</p>
+                        <div class="bar-wrapper">
+                            <div class="bar">
+                                <div class="bar-num bar-js" title="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <p>jQuery</p>
+                        <div class="bar-wrapper ">
+                            <div class="bar">
+                                <div class="bar-num bar-jq" title="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <p>Vue</p>
+                        <div class="bar-wrapper">
+                            <div class="bar">
+                                <div class="bar-num bar-vue" title="77%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <p>Webpack</p>
+                        <div class="bar-wrapper">
+                            <div class="bar">
+                                <div class="bar-num bar-webpack" title="60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title">>>自我介绍</div>
+                <p class="passage">熟悉HTML5 CSS3 JavaScript ES6 Vue axios vuex</p>
+                <p class="passage">开发经验1年无工作经验</p>
+                <div class="line"></div>
+                <p class="passage">一些自己在学习过程中记录的笔记：</p>
+                <p class="passage"><a href="http://note.youdao.com/noteshare?id=c77a980be7821f31d7dd9dc59eea4fb4">http://note.youdao.com/noteshare?id=c77a980be7821f31d7dd9dc59eea4fb4</a></p>
+                <p class="passage"><a href="http://note.youdao.com/noteshare?id=8868a59384ce2012a0f5ccf7fd3d2084">http://note.youdao.com/noteshare?id=8868a59384ce2012a0f5ccf7fd3d2084</a></p>
+                <div class="line"></div>
+                <p class="passage">半路转行通过自学学习前端，对前端充满了兴趣，勤奋学习，对自己不足的方面也会自己多去学习，利用自己的时间将差距缩小。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
